@@ -37,7 +37,6 @@ def convertImage(file,file_path):
         if img.mode == "RGB":
             r, g, b = img.split()
         elif img.mode == "RGBA":
-            
             r, g, b,a = img.split()
         else:
             print "[error] image mode is:" + img.mode 
