@@ -50,5 +50,4 @@ def convertImage(file,file_path):
         print "[error] Failed to convert Image" 
 
 def callOcr():
-    image = Image.open('images/temp.bmp')
-    return image_to_string(image)
+        return image_to_string(Image.open('images/temp.bmp'))
