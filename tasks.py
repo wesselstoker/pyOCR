@@ -10,8 +10,7 @@ def construct(file):
     if file and checkImage(file.filename):
         file_path = uploadImage(file)
         convertImage(file,file_path)
-        string = callOcr()
-        return string
+        return callOcr()
     else:
         return "Only .png, .jpg and jpeg are allowed."
 
